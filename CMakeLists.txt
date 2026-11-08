@@ -8,3 +8,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(exchange_sim src/main.cpp)
 target_compile_options(exchange_sim PRIVATE -Wall -Wextra -Wpedantic)
+
+add_executable(tests tests/test_parse.cpp src/parse.cpp)
+target_compile_options(tests PRIVATE -Wall -Wextra -Wpedantic)
